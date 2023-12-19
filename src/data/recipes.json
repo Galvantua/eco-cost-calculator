@@ -10731,7 +10731,7 @@
       {
         "name": "GatheringSkill",
         "displayName": "Gathering",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -19114,7 +19114,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -19438,7 +19438,7 @@
       {
         "name": "GatheringSkill",
         "displayName": "Gathering",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -20004,7 +20004,7 @@
       {
         "name": "GatheringSkill",
         "displayName": "Gathering",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -23115,7 +23115,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 4
       }
     ]
@@ -24374,7 +24374,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 3
       }
     ]
@@ -24842,7 +24842,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 4
       }
     ]
@@ -24962,7 +24962,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 1
       }
     ]
@@ -25002,7 +25002,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 1
       }
     ]
@@ -25183,7 +25183,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 4
       }
     ]
@@ -28450,7 +28450,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 4
       }
     ]
@@ -30077,7 +30077,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
@@ -30124,7 +30124,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
@@ -30171,7 +30171,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
@@ -30218,7 +30218,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
@@ -30265,7 +30265,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
@@ -30312,7 +30312,7 @@
       {
         "name": "HuntingSkill",
         "displayName": "Hunting",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 5
       }
     ]
