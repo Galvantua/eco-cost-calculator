@@ -14,7 +14,9 @@ export const updateProfessionAction = ({
 
   profession.level = updatedProfession.level;
   profession.hasLavishWorkspace =
-    updatedProfession.level >= 6 && updatedProfession.hasLavishWorkspace;
+    updatedProfession.level >= 6 &&
+    updatedProfession.hasLavishWorkspace &&
+    updatedProfession.hasLavishOption;
 
   draft.recipes.forEach((recipe) => {
     if (!recipeMatchesProfession(recipe, profession)) return;
