@@ -10006,7 +10006,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 4
       }
     ]
@@ -10418,7 +10418,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -13064,7 +13064,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 2
       }
     ]
@@ -13667,7 +13667,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 7
       }
     ]
@@ -13700,7 +13700,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 7
       }
     ]
@@ -16781,7 +16781,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 1
       }
     ]
@@ -19147,7 +19147,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 0
       }
     ]
@@ -21822,7 +21822,7 @@
       {
         "name": "LoggingSkill",
         "displayName": "Logging",
-        "hasLavishOption": true,
+        "hasLavishOption": false,
         "level": 1
       }
     ]
