@@ -15,6 +15,7 @@ export interface Profession {
   name: string;
   displayName: string;
   level: number;
+  hasLavishOption?: boolean;
 }
 
 export interface BaselineItem {

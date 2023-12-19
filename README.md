@@ -1,5 +1,4 @@
 
-
 # Using the calculator
 
 The cost calculators works with recipes first.
@@ -14,6 +13,7 @@ If an item is produced by multiple recipes (e.g. multiple tiers of ore crushing)
 There's also a shortcut for adding a recipe by clicking on the "+" Icon in the input list. This is adding the first found recipe that produces this item. If there are multiple options (e.g. smelting, concentrating, mortar, ...), double-check if the correct option was added.
 
 ## Byproducts
+
 If you want to include byproduct prices in your calculations, just add what you're selling them for to the items in the "byproducts" section in Inputs. For example, if you pay people to take away your tailings, you could enter "-1" for the "Wet Tailings" item.
 For byproducts that you also produce yourself, you still have to manually enter the value.
 
@@ -22,6 +22,7 @@ This is basically required for Barrels, makes a noticeable difference for tailin
 For barrels, it's best to look at your "products" tab and copy the barrel price.
 
 ## Quirks
+
 The profit margin is applied to each product. If that product is used in another product, the profit margin is applied again.
 That means that large margins somewhat exponentially increase the price of the end-product. This is intentional. Crafting from ore to skid steer should be more rewarding than just selling the equivalent amount of crushed ore.
 
@@ -33,6 +34,7 @@ There is an option to add Modules to tables that don't support them. This is a b
 Tags are not currently handled in a special way. That means an item requiring "Fat" as an input does not automatically use your "Oil" product. Also, an item requiring generic "logs" won't use the price of your "Oak Log" input. They're all treated as different items.
 
 # Customization
+
 The cost calculator has preset recipes for the 9.5 playtest.
 
 However, you can upload a custom recipe JSON file for each profile.
@@ -79,8 +81,8 @@ The JSON file should be an array of recipe-entries like this:
 }
 ```
 
-
 # Source Code
+
 ## Available Scripts
 
 In the project directory, you can run:
