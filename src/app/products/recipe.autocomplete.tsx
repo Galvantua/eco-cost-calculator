@@ -37,6 +37,8 @@ export const RecipeAutocomplete: React.FC<RecipeAutocompleteProps> = ({
               ...value,
               price: 0,
               highlighted: false,
+              mainProduct: value.products[0],
+              byproduct: value.products[1],
             },
           });
         });
