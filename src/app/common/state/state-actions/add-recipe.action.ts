@@ -97,6 +97,7 @@ export function processAddRecipeAction({
       level: 0,
       displayName: addedRecipe.professions[0].displayName,
       name: addedRecipe.professions[0].name,
+      hasLavishOption: addedRecipe.professions[0].hasLavishOption,
     });
   }
   const mainProduct = draft.products.get(addedRecipe.mainProduct.name);
