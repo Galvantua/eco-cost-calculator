@@ -1,55 +1,30 @@
 import protoRecipe from './recipes.json';
 
-export interface Recipe {
-  ingredients: Ingredient[];
-  mainProduct: Product;
-  byproduct?: Product;
-  name: string;
-  calories?: number;
-  experience: number;
-  table: string;
-  professions: Profession[];
-}
+// TODO: Find better workaround to get proper typing
+const recipesJson = protoRecipe;
 
-export interface Profession {
-  name: string;
-  displayName: string;
-  level: number;
-  hasLavishOption?: boolean;
-}
-
-export interface BaselineItem {
-  quantity: number;
-  isConstant: boolean;
-  displayName: string;
-}
-
-export interface Product extends BaselineItem {
-  name: string;
-}
-
-export interface TagIngredient extends BaselineItem {
-  name: null;
-  tag: string;
-}
-
-export interface ItemIngredient extends BaselineItem {
-  name: string;
-  tag: null;
-}
-
+export type Recipe = (typeof recipesJson)[number];
+export type Profession = Recipe['professions'][number];
+export type BaselineItem = Recipe['products'][number];
+export type Product = BaselineItem & { name: string };
+export type TagIngredient = BaselineItem & { name: null };
+export type ItemIngredient = BaselineItem & { tag: null };
 export type Ingredient = ItemIngredient | TagIngredient;
 
-export const recipes: Recipe[] = recipesFromJson(protoRecipe);
+export const recipes = recipesFromJson(protoRecipe);
 
-export function recipesFromJson(json: any) {
-  return json.map((recipe: any) => {
+export function recipesFromJson(json: typeof protoRecipe) {
+  return json.map((recipe) => {
     const mainProduct = getMainProduct(recipe.products);
     const byproduct = getByproduct(recipe.products);
 
     return { ...recipe, mainProduct, byproduct };
   });
 }
+
+export type RecipeWithMainProdAndByprod = ReturnType<
+  typeof recipesFromJson
+>[number];
 
 export function getMainProduct(products: Product[]): Product {
   // Usual case. Only 1 product
