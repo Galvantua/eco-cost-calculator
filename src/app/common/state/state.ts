@@ -1,5 +1,9 @@
 import { current, original } from 'immer';
-import { Profession, Recipe, recipes } from '../../../data/recipes';
+import {
+  Profession,
+  RecipeWithMainProdAndByprod,
+  recipes,
+} from '../../../data/recipes';
 import { Profile } from '../../layout/content';
 import {
   processAddRecipeAction,
@@ -19,9 +23,9 @@ import {
   updatePrice,
 } from './update-prices';
 
-export interface ProfessionState extends Profession {
+export type ProfessionState = Profession & {
   hasLavishWorkspace?: boolean;
-}
+};
 
 export type ItemMap = Map<string, Item>;
 export type CraftingRecipeMap = Map<string, CraftingRecipe>;
@@ -40,7 +44,7 @@ export interface AppState {
   professions: ProfessionMap;
   updating: Set<string>;
   updated: Set<string>;
-  data: Recipe[];
+  data: RecipeWithMainProdAndByprod[];
 }
 
 export interface Item {
@@ -54,13 +58,13 @@ export interface Item {
   price: number;
 }
 
-export interface CraftingRecipe extends Recipe {
+export type CraftingRecipe = RecipeWithMainProdAndByprod & {
   price: number;
   highlighted: boolean;
   batchSize?: number;
   margin?: number;
   fixedCost?: number;
-}
+};
 export type UpgradeLevel = 0 | 1 | 2 | 3 | 4 | 5;
 
 export interface CraftingStation {
