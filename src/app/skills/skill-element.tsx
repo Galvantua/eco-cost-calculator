@@ -27,7 +27,7 @@ export const SkillSegment: React.FC<SkillSegmentProps> = ({
           <FlexItem>
             <Typography variant="h6" component="div">
               {profession.displayName}
-              {profession.level >= 6 && profession.hasLavishOption && (
+              {profession.level >= 6 && (
                 <div>
                   <FormControlLabel
                     label="Lavish Workspace Bonus?"
