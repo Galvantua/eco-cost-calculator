@@ -79,7 +79,7 @@ const Ingredient: React.FC<IngredientProps> = ({
     <FlexItem>
       <LabelGroup>
         <Typography component="div">{item.displayName} </Typography>
-        {item.canBeProduced && (
+        {item.canBeProduced && item.byproductOfRecipes.size === 0 && (
           <Tooltip title="Add Recipe for Item">
             <IconButton
               onClick={() =>
